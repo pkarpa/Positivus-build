@@ -1,20 +1,20 @@
 @font-face {
   font-family: "SpaceGrotesk";
-  src: url("./assets/fonts/SpaceGrotesk-Regular.ttf") format("TrueType");
+  src: url("/assets/fonts/SpaceGrotesk-Regular.ttf") format("TrueType");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SpaceGrotesk";
-  src: url("./assets/fonts/SpaceGrotesk-Medium.ttf") format("TrueType");
+  src: url("/assets/fonts/SpaceGrotesk-Medium.ttf") format("TrueType");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SpaceGrotesk";
-  src: url("./assets/fonts/SpaceGrotesk-Bold.ttf") format("TrueType");
+  src: url("/assets/fonts/SpaceGrotesk-Bold.ttf") format("TrueType");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -258,13 +258,45 @@ header .btn-burger.active span:last-child {
   filter: none;
 }
 
+#first-screen-mobile-img {
+  display: none;
+}
+
+#first-screen-desktop-img {
+  display: block;
+}
+
 @media (min-width: 1025px) {
   .btn-burger {
     display: none;
   }
 }
+@media screen and (max-width: 1199px) {
+  .header .menu-list {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
-  .menu {
+  h1 {
+    font-size: 43px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .header {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .header .menu {
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -276,13 +308,58 @@ header .btn-burger.active span:last-child {
     visibility: hidden;
     transition: 0.3s;
   }
-  .menu.show {
-    top: 162px;
+  .header .menu.show {
+    top: 107px;
     transform: translate(0, 0);
     visibility: visible;
   }
-  .menu-list {
+  .header .menu-list {
     flex-direction: column;
+  }
+  .header .menu__link {
+    font-size: 18px;
+  }
+  .header .menu__link:hover {
+    font-size: 19px;
+  }
+  .header-logo__img {
+    max-width: 150px;
+  }
+  .first-screen-title {
+    margin-bottom: 18px;
+  }
+  .first-screen-text {
+    max-width: 100%;
+  }
+  .first-screen-subtitle {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .first-screen-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .first-screen-logotypes {
+    flex-wrap: wrap;
+  }
+  .first-screen-logotypes__img {
+    max-width: 120px;
+  }
+  .first-screen-content {
+    margin-bottom: 35px;
+  }
+  #first-screen-mobile-img {
+    display: block;
+    margin: 0 auto;
+  }
+  #first-screen-desktop-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
