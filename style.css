@@ -226,6 +226,10 @@ header .btn-burger.active span:last-child {
   opacity: 0;
 }
 
+.first-screen{
+  margin-bottom: 140px;
+}
+
 .first-screen-content {
   display: flex;
   justify-content: space-between;
